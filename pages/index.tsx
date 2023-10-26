@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import { useRouter } from "next/router";
 
-const inter = Inter({ subsets: ["latin"] });
+import { useRouter } from "next/router";
 
 export default function Home() {
   const router = useRouter();
@@ -16,7 +14,7 @@ export default function Home() {
   };
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-24`}
     >
       <div>Landing Page</div>
       <button onClick={handleGoToLogin}>Go to Login</button>
