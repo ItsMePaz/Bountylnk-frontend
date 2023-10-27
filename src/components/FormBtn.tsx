@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 type Props = {
@@ -5,7 +6,11 @@ type Props = {
 };
 
 const FormBtn = ({ buttonTitle }: Props) => {
-  return <div className="buttonStyle">{buttonTitle}</div>;
+  return (
+    <motion.div whileHover={{ scale: 1.06 }} className="buttonStyle">
+      {buttonTitle}
+    </motion.div>
+  );
 };
 
 export default FormBtn;
