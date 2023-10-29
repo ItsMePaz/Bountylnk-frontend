@@ -4,24 +4,6 @@
   font-family: "Red Rose", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 .buttonStyle {
   border-radius: 18px;
   background: linear-gradient(180deg, #ffd700 0%, rgba(255, 215, 0, 0.57) 100%);
